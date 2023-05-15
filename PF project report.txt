@@ -1,0 +1,258 @@
+﻿----------------------- Page 1-----------------------
+
+National University of Computer & Emerging Sciences  
+                                      Karachi Campus  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+                     
+
+                     Hospital Management System  
+
+                                                Report  
+                          Programming Fundamentals   
+                                            Section: E  
+                                                        
+                                                        
+  
+                                     Group Members:  
+                 20k-0148 Ishaqullah Siddiqui(Leader)  
+                            20k-1644 Sarim Latif Khan  
+                         20k-1734 Atizaz Ahmed Khan  
+  
+
+  
+
+  
+
+----------------------- Page 2-----------------------
+
+                                         INTRODUCTION  
+
+Hospital management system is a system in which admin can add patient’s  
+records, also he/she can make changes in it like search for a record or edit a  
+record or see the list of records and delete the records of the patients who are  
+discharged.  
+
+  
+
+  
+
+                                          BACKGROUND  
+
+This project is based on a console application developed on C language in which  
+we have done filing for managing records of patients. We have covered almost all  
+the topics taught to us i.e. structures, filing, pointers, conditional statements,  
+function recursion and many more.  
+
+  
+
+                                  PROJECT SPECIFICATION  
+
+First user will be asked:  
+
+    1.  Sign Up:  
+                        Here user will sign up if he doesn’t want to login with the default  
+         username and password of the management system.  
+          
+    2.  Log in:  
+                     If user selects log in then he will be asked to enter the default  
+         username and password. He will be given three chances to enter correct  
+         username and password if he enters wrong username or password more  
+        than three times the program will be ended.  
+          
+        After logging in to the management system, a choice screen is displayed  
+        giving user 6 choices.  
+                Add Record.  
+                Edit record.  
+                List record.  
+
+----------------------- Page 3-----------------------
+
+                 Delete record.  
+                 Search record.  
+                 Exit.  
+
+                                            PROBLEM ANALYSIS  
+
+We have gone through many hospital management systems and found that the  
+major issues in the management systems were as follows:  
+
+        Security issues:  
+                                     We have created a login and signup page for the user so  
+         that he/she can register his/her hospital and clinic first. The password given  
+         by user on sign up page will be encrypted  and saved in the file so that no  
+         one will be able to see the password.   
+        Searching for the record:  
+                                                       In many management systems, we have seen that  
+         there was no search function so if the user want to search one record out  
+         of thousands much time was taken. We have created a search a function in  
+         which a user is asked for first name of patient and the fuction will fetch the  
+         whole record of patient.  
+             
+        Editing the record:  
+                                          There was no editing function in management systems so  
+         we have added a function in our program, which will ask user the first name  
+         of patient, and then he will be able to update/renew the specific record.  
+             
+            
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+                                                              
+
+----------------------- Page 4-----------------------
+
+                                                      
+
+           SOLUTION DESIGN (Project Details, Functionality &  
+                                         Methodology)  
+
+                                         Project Details  
+
+    The project is a hospital management system in which the admin will first sign  
+    up. Once he have registered himself he can now log in to the system directly,  
+    where he can add  patients record, view the records, delete the records, edit  
+    the records, and search for the specific record.    
+
+                                                                                                          
+
+                                          Functionality  
+
+In the add function the admin will be asked to enter first name of patient, his last  
+name, age, address, gender, email id, prescribed doctor, and the problem faced  
+by patient.  
+
+In edit function, the admin can update the specific record by giving the first name  
+of the patient, which he want to edit.  
+
+----------------------- Page 5-----------------------
+
+In delete function, the admin will be asked for the first name of the patient whose  
+record he wants to delete.  
+
+In list function, the admin will be able to see the records of patient.  
+
+In search function, the admin will be able to search the specific record of patient.  
+
+   
+
+                                        Methodology  
+
+Libraries:  
+
+#include <stdio.h>  
+
+#include <conio.h>  
+
+#include <string.h>  
+
+#include <stdlib.h>  
+
+#include <windows.h>  
+
+Structures:  
+
+There are two structures in our program namely patient and account. The  
+structure of patient contains name, age, address, email, prescribed doctor,  
+problem in their respective data type. While account structure contain username  
+and password in string data type.  
+
+ Functions:  
+
+       void title():  
+        It contains the heading which is shown on all pages  
+       void welcomescreen():  
+        It contains the welcome screen.  
+       void signup():  
+        It contains sign up page in which admin can register himself  
+       void loginscreen():  
+        It contains the login system of management.  
+       void choice():  
+        It contains the page which asks the user what task he want to perform.  
+
+----------------------- Page 6-----------------------
+
+   void add():  
+     It takes the details of patients.  
+   void edit():  
+     It shows the page on which we can edit the specific record.  
+   void del():  
+     It shows the page on which we can delete the specific record.  
+   void view():  
+    This function gives all the records of patients.  
+   void search():  
+     It shows the page on where we can search the specific record.  
+   void exitme();  
+     It exits the management system.  
+      
+      
+
+                                       IMPLEMENTATION  
+
+The designed system implementation was done to replace a manual system  
+with the computerized one. The objective was to put the tested system in to  
+operation. Critical aspects of conversion are not disrupting the functioning of  
+the organization. This phase gives us the clears pictures of our new system and  
+all the points that have been carefully looked in when designing the  
+computerized system.  
+
+Sincere efforts were taken for the implementation of the following goals.  
+
+    Maximizing the output reliability  
+    Maximizing the source test readability  
+    Minimizing the development time  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+----------------------- Page 7-----------------------
+
+Results:  
+
+                                                 
+
+         
+
+                                                  
+
+----------------------- Page 8-----------------------
+
+                                                                                                          
+
+           
+
+  
+
+                                                 Conclusions:  
+
+           We can hereby conclude that:  
+
+            The system effectively automated the functions involved in the  
+              processes being handled manually before.  
+            The system is secure & scalable. The system design has been done  
+              keeping user-friendliness and efficiency in mind.  
